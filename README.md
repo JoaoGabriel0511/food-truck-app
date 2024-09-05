@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Food Truck Shuffler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo link:
+Access my site [here](https://food-truck-app-gqre.vercel.app/)
 
-Currently, two official plugins are available:
+## Table of Content:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [About The App](#about-the-app)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Approach](#approach)
+- [Status](#status)
+- [Credits](#credits)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## About The App
+Food Truck Shuffler is an app that provides the user a list of random selected food Truck list, all recovered form [Mobile Food Facility Permit Data set](https://data.sfgov.org/Economy-and-Community/Mobile-Food-Facility-Permit/rqzj-sfat/data),
+for the user to try it out. Perfect for people who like to try something new when it comes to food
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Screenshots
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+`![Writing](https://drive.google.com/file/d/1qfVKjNseYEVN2lOMrvzad_K6kBOhzM37/view?usp=sharing`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies
+I used `html`, `css`, `React`, `vite`, `cypress`, `jest`, `typescript`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Setup
+- download or clone the repository
+- run `npm install`
+- run `npm dev`
